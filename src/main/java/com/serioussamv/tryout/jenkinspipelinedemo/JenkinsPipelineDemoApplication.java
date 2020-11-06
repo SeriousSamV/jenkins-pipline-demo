@@ -16,7 +16,10 @@ public class JenkinsPipelineDemoApplication {
 
 	@Bean
 	public CommandLineRunner commandLineRunner() {
-		return args -> log.info("feature-1");
+		return args -> {
+			log.info("feature - 1");
+			log.info("bugfix - b1");
+		};
 	}
 
 }
